@@ -81,7 +81,7 @@ if __name__ == '__main__':
                         (y + 5) ** 2 * 0.01,
     )
 
-    '''print("爬山法")
+    print("爬山法")
     init_state = np.array([3, 5])
     optimizer = ClimbingMethod()
     best_state, best_score = optimizer.run(env=env, init_state=init_state, max_step=200, view=False)
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     optimizer = SimulateAnneal(lambda t: 10 * np.exp(-0.01 * t))
     best_state, best_score = optimizer.run(env=env, init_state=init_state, max_step=200, view=False)
     print("best_state:", best_state)
-    print("best_score:", best_score)'''
+    print("best_score:", best_score)
 
     print("遗传算法")
     ga_helper = ClimbingGAHelper(x_lim=[-5, 5], y_lim=[-5, 20], population_size=5, mutate_rate=0.01)
